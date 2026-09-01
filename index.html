@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GRAFFIX — Graffiti fixed into apparel, headwear and tech accessories.">
+  <title>Graffix. — Graffiti, Fixed.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="ticker" aria-label="프로모션 안내">
+    <div>SEOUL GRAFFIX UNIT — DROP 001 &nbsp;✦&nbsp; FREE SHIPPING OVER ₩50,000 &nbsp;✦&nbsp; LEAVE A MARK &nbsp;✦&nbsp; SEOUL GRAFFIX UNIT — DROP 001 &nbsp;✦&nbsp;</div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Graffix 홈"><img src="grafix-logo.png" alt="Graffix."></a>
+    <nav aria-label="주 메뉴">
+      <a href="#shop">SHOP</a>
+      <a href="#manifesto">ABOUT</a>
+      <a href="#lookbook">LOOKBOOK</a>
+    </nav>
+    <button class="bag" type="button" aria-label="쇼핑백 열기">BAG <span id="bagCount">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GRAFFITI × FIX / SEOUL / 2026</p>
+        <h1>MAKE<br>YOUR<br><em>MARK.</em></h1>
+        <p class="hero-note">도시의 순간적인 흔적을 오브젝트에 고정하다.<br>그래피티의 태도와 일상의 기능이 만나는 곳.</p>
+        <a class="cta" href="#shop">SHOP DROP 001 <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="stamp">AUTHENTIC<br>GRAPHICS<br>SEOUL</div>
+        <div class="hero-word">GFX</div>
+        <div class="cross">＋</div>
+        <p>GRAFFITI,<br>FIXED FOREVER.</p>
+      </div>
+      <div class="side-code">37°33'N / 126°59'E — UNIT NO.001</div>
+    </section>
+
+    <section class="manifesto" id="manifesto">
+      <p>GRAFFIX = GRAFFITI + FIX</p>
+      <h2>흔적을 남기고.<br><span>태도를 고정하다.</span></h2>
+      <div class="manifesto-grid">
+        <p>GRAFFIX는 GRAFFITI의 자유로운 흔적과 FIX의 고정된 태도를 결합한 이름입니다. 그래픽 하나를 캡, 티셔츠, 폰케이스까지 연결해 매일 쓰는 물건을 당신만의 태그로 만듭니다.</p>
+        <p class="issue">ISSUE 001<br>LIMITED OBJECTS<br>DESIGNED IN SEOUL</p>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="section-head">
+        <div><p class="eyebrow">CURRENT SELECTION</p><h2>SHOP ALL</h2></div>
+        <p><span id="resultCount">0</span> OBJECTS / DROP 001</p>
+      </div>
+      <div class="filters" role="group" aria-label="상품 카테고리 필터">
+        <button class="active" data-filter="all">ALL</button>
+        <button data-filter="apparel">APPAREL</button>
+        <button data-filter="headwear">HEADWEAR</button>
+        <button data-filter="cases">CASES</button>
+        <button data-filter="accessories">ACCESSORIES</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="lookbook" id="lookbook">
+      <div class="look-card acid"><span>01</span><strong>STREET<br>PROOF.</strong><small>SEOUL / NIGHT / 35MM</small></div>
+      <div class="look-card black"><span>02</span><strong>OBJECTS<br>WITH A<br>PULSE.</strong><small>GRAFFIX FIELD NOTES</small></div>
+      <div class="look-card type"><div>G</div><p>THIS IS YOUR SIGN<br>TO MAKE SOME NOISE.</p></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">TRANSMISSION LIST</p>
+      <h2>다음 그래픽을<br>가장 먼저 받아보세요.</h2>
+      <form id="newsletterForm">
+        <label class="sr-only" for="email">이메일 주소</label>
+        <input id="email" type="email" placeholder="YOUR@EMAIL.COM" required>
+        <button type="submit">JOIN ↗</button>
+      </form>
+      <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo footer-logo" href="#top"><img src="grafix-logo.png" alt="Graffix."></a>
+    <p>APPAREL / HEADWEAR / CASES / OBJECTS</p>
+    <p>© 2026 GRAFFIX UNIT. SEOUL.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
